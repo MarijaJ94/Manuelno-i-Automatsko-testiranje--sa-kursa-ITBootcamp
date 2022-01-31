@@ -1,0 +1,10 @@
+Napravila sam posebne pakete za BasePage, TestLogin i LoginPage ali kada sam ih posle premestila u poseban paket
+"DomaciLoginSaucedemo" - program namesti kao da je "pomTest" samo klasa a ne i paket.
+
+Generalno, pisala sam na nacin na koji smo radili u petak, a ne onako da mi sve bude jedno ispod drugog u jednoj klasi
+da bih vezbala. Verovatno je moglo i tako da se pise posto je samo Login, odnosno nema vise stranica pa ovaj nacin na
+koji sam ja pisala deluje besmisleno (koliko se secam na casu smo rekli da ako je nesto sitno u pitanju kao npr samo
+provera za login onda mozemo da radimo na prvobitan nacin (da je sve u jednoj klasi)).
+
+Probala sam i preko kolacica (posto sam razumela da username i password treba da se dohvate sa stranica), ali sam negde pogresila.
+Ne znam da li je greska u tome gde sam sta pisala ili u samom nacinu na koji sam pisala.

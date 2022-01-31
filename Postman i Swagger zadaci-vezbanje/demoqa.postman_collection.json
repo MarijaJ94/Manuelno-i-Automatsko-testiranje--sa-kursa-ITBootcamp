@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "2c5e52f8-b256-4d49-a5ad-da69d78b3ac0",
+		"name": "demoqa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Laza\",\r\n  \"password\": \"Marija100%\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/Account/v1/User",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Autorizacija",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkxhemEiLCJwYXNzd29yZCI6Ik1hcmlqYTEwMCUiLCJpYXQiOjE2NDMyMjU5ODd9.Z5X3W_x5rCNV_ZO7UTOYpXgrX5k4zEvK6gXbUpQSBpY\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Laza\",\r\n  \"password\": \"Marija100%\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/Account/v1/Authorized",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"Authorized"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Laza\",\r\n  \"password\": \"Marija100%\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/Account/v1/GenerateToken",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"GenerateToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get UserID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic TGF6YTpNYXJpamExMDAl",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseURL}}/Account/v1/User/4881d978-ea8f-42cb-90a5-5ed235190c26",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"User",
+						"4881d978-ea8f-42cb-90a5-5ed235190c26"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
